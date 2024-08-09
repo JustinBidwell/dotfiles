@@ -1,0 +1,4 @@
+PSQL
+postgres
+sudo
+checksum_v1 = de3996b674336792db543281b5d421df
