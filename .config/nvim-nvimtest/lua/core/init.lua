@@ -1,0 +1,5 @@
+require("core.keymaps")
+require("core.options")
+require("core.html")
+require("core.css")
+require("core.javascript")

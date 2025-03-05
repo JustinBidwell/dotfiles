@@ -7,6 +7,7 @@ fi
 
 # Created by newuser for 5.9
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -20,6 +21,9 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+alias v='nvim' # default Neovim config
+alias vz='NVIM_APPNAME=nvim-nvimtest nvim' # LazyVim
 
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward

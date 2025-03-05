@@ -216,6 +216,10 @@ bindsym XF86AudioPause exec --no-startup-id playerctl pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl s 350+
+bindsym XF86MonBrightnessDown exec brightnessctl s 350-
+
 bar { 
      swaybar_command waybar
 }
