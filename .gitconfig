@@ -1,0 +1,6 @@
+[user]
+	name = justin
+    email = justin.bidwel@gmail.com
+    defaultBranch = main
+[init]
+	defaultBranch = main

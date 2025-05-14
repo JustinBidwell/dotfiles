@@ -1,2 +1,2 @@
-require("justin.core")
-require("justin.lazy")
+require("core")
+require("config.lazy")

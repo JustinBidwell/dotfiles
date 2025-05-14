@@ -27,7 +27,7 @@ exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec_always import-gsettings
 
-output * bg /home/justin/wallpapers/gruvPeng.png fill
+output * bg /home/justin/wallpapers/lofi_cat.png fill
 
 output DP-2 mode 1920x1080@165hz
 output HDMI-A-2 mode 2560x1440 pos 1920 0
@@ -44,12 +44,12 @@ exec swayidle -w \
 bindsym $mod+Escape exec 'swaylock'
 
 # target                 title     bg    text   indicator  border
-client.focused           #282828 #282828 #fbf1c7  #282828 #282828
-client.focused_inactive  #282828 #282828 #fbf1c7  #282828 #282828
-client.unfocused         #282828 #282828 #fbf1c7  #282828 #282828
-client.urgent            #282828 #282828 #fbf1c7 #282828 #282828
-client.placeholder       #282828 #282828 #fbf1c7  #282828 #282828
-client.background        #282828
+client.focused           $lavender $base $text  $rosewater $base
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 
 ### Key bindings
@@ -163,12 +163,10 @@ client.background        #282828
     bindsym $mod+a focus parent
 
     # Remove default window titlebars
-
-    smart_borders on
-    gaps inner 5
+    default_border pixel
+    gaps inner 3
     gaps outer 3
-    default_border pixel 10
-
+    smart_gaps = on
 #
 # Scratchpad:
 #

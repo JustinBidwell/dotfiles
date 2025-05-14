@@ -23,7 +23,7 @@ setopt hist_ignore_dups
 setopt hist_verify
 
 alias v='nvim' # default Neovim config
-alias vz='NVIM_APPNAME=nvim-nvimtest nvim' # LazyVim
+#alias vz='NVIM_APPNAME=nvim-nvimtest nvim' # LazyVim
 
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward
